@@ -5,8 +5,14 @@
 ////Exercise1Helper.Run();
 
 
-using ConsoleApp1.Exercise2;
+//using ConsoleApp1.Exercise2;
 
-Console.WriteLine("Exercise 2");
-Exercise2Helper.Run();
+//Console.WriteLine("Exercise 2");
+//Exercise2Helper.Run();
+
+using ConsoleApp1.Exercise3;
+
+Console.WriteLine("Exercise 3");
+Exercise3Helper.Run();
+
 
