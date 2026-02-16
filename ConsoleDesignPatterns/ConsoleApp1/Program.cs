@@ -10,9 +10,19 @@
 //Console.WriteLine("Exercise 2");
 //Exercise2Helper.Run();
 
-using ConsoleApp1.Exercise3;
+//using ConsoleApp1.Exercise3;
 
-Console.WriteLine("Exercise 3");
-Exercise3Helper.Run();
+//Console.WriteLine("Exercise 3");
+//Exercise3Helper.Run();
 
+//using ConsoleApp1.Exercise4;
+
+//Console.WriteLine("Exercise 4");
+//Exercise4Helper.Run();
+
+
+using ConsoleApp1.Exercise5;
+
+Console.WriteLine("Exercise 5");
+Exercise5Helper.Run();
 

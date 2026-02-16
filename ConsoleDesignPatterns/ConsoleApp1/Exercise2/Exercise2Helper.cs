@@ -1,4 +1,54 @@
-﻿namespace ConsoleApp1.Exercise2;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Numerics;
+
+namespace ConsoleApp1.Exercise2;
+
+//Exercise 2 – Builder
+//Introductory Speech
+
+//Now let’s move to a different type of complexity: constructing complex objects.
+
+//In financial systems, a trade order is rarely simple.It may include:
+
+//Required fields like instrument and quantity
+
+//Optional fields like stop loss and take profit
+
+//Cross-field validation rules
+
+//Different configurations like market or limit orders
+
+//If we try to handle all this with constructors, we quickly end up with:
+
+//Telescoping constructors
+
+//Confusing parameter order
+
+//Poor readability
+
+//Weak validation control
+
+//The objective of this exercise is to:
+
+//Build complex objects step by step
+
+//Enforce validation at construction time
+
+//Improve readability and intent
+
+//Prevent partially constructed invalid objects
+
+//The Builder pattern allows us to separate construction from representation. It gives us a fluent API, ensures mandatory fields are validated, and allows cross-field logic inside Build().
+
+//Notice how we move validation into the build phase.
+//This guarantees that once a TradeOrder exists, it is valid by construction.
+
+//This pattern is especially powerful in domains where object correctness is critical.
+
+
 
 public static class Exercise2Helper
 {

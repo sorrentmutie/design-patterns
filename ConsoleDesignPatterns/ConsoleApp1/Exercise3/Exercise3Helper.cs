@@ -1,8 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp1.Exercise3;
+
+//Exercise 3 – Abstract Factory
+//Introductory Speech
+
+//In this exercise, we introduce a different dimension of variability:
+//families of related objects.
+
+//Suppose our system generates market reports.
+//Depending on the regulatory context — EU or US — the report must change:
+//Date formats
+//Identifiers (ISIN vs CUSIP)
+//Regulatory disclaimers
+//Compliance wording
+//These elements belong together. They form a coherent family.
+//If we use simple conditionals like:
+
+//if (market == "EU") ...
+//else if (market == "US") ...
+
+
+//We mix business logic with regulatory variations.
+//That quickly becomes fragile and hard to extend.
+
+//The goal here is to:
+
+//Encapsulate families of related components
+//Ensure consistency within each family
+//Avoid conditionals scattered throughout the code
+//Make adding a new market possible without modifying the generator
+
+//The Abstract Factory pattern gives us an interface that produces
+//related components — header, body, footer —
+//while keeping the client code unaware of the specific market.
+
+//The key insight is this:
+
+//We are not just abstracting one object.
+//We are abstracting a family of coordinated objects.
+
 
 public static class Exercise3Helper
 {
